@@ -1,0 +1,13 @@
+void main() {
+  // ===== ENTRADAS =====
+  String nome = "Gustavo";
+  int idade = 16;
+  double altura = 1.80;
+  bool trabalho = true;
+  // ====================
+  print("FICHA TÉCNICA");
+  print("Nome: $nome");
+  print("Idade: $idade");
+  print("Altura: $altura");
+  print("Trabalho: $trabalho");
+}
