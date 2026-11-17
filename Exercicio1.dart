@@ -1,5 +1,5 @@
 void main() {
-  String nome = "Gustavo";
+  String nome = "Bolacha";
   double preco = 10.0;
   int quantidade = 5;
   int estoque = 20;
