@@ -1,0 +1,13 @@
+void main() {
+  // ===== ENTRADAS =====
+  int totalMinutos = 200;
+  // ====================
+
+  int X = totalMinutos ~/ 60; // Horas cheias (3)
+  int Y = totalMinutos % 60; // Minutos restantes (20)
+
+  print("$X h e $Y min");
+}
+
+// 4. Horas e minutos. Dado um total de minutos, imprima no formato "X h e Y min".
+// Com 200 deve sair "3 h e 20 min".
