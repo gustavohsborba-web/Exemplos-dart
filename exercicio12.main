@@ -1,0 +1,14 @@
+void main() {
+  // ===== ENTRADAS =====
+  int ingresso = 40;
+  int meia = 20;
+  bool estudante = true;
+  int idade = 12;
+  // ====================
+
+  if (idade < 12 || idade >= 60 || estudante) {
+    print("Paga meia $meia");
+  } else {
+    print("Paga inteira $ingresso");
+  }
+}
