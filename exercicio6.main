@@ -1,0 +1,14 @@
+void main() {
+  // ===== ENTRADAS =====
+  int a = 5;
+  int b = 9;
+  // ====================
+
+  print('Antes -> a: $a b: $b');
+
+  int troca = a; // Guarda o valor original de 'a' (5)
+  a = b; // 'a' recebe o valor de 'b' (9)
+  b = troca; // 'b' recebe o valor guardado em 'troca' (5)
+
+  print('Depois -> a: $a b: $b');
+}
