@@ -1,0 +1,8 @@
+int idadeEm2030(int anoNascimento) {
+  return 2030 - anoNascimento;
+}
+
+void main() {
+  int idade = idadeEm2030(2010);
+  print("Em 2030 você vai ter $idade anos");
+}
