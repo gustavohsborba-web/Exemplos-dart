@@ -1,0 +1,41 @@
+class Lanche {
+  String nome;
+  double preco;
+  Lanche(this.nome, this.preco);
+
+  void mostrar() {
+    print("$nome custa $preco Reias");
+  }
+
+  // Devolve verdadeiro (true) se o preço deste lanche for menor que 12
+  bool ehBarato() {
+    return preco < 12;
+  }
+}
+
+class Bebida extends Lanche {
+  int ml;
+  Bebida(super.nome, super.preco, this.ml);
+
+  @override
+  void mostrar() {
+    print("$nome ($ml ml) custa $preco Reais");
+  }
+}
+
+void main() {
+  List<Lanche> cardapio = [
+    Lanche("X-Burguer", 18),
+    Lanche("Refrigerante", 12),
+    Lanche("Sorvete", 8),
+    Bebida("Coca-Cola", 12, 350),
+  ];
+
+  // Percorre cada lanche dentro da lista cardapio
+  for (Lanche item in cardapio) {
+    item.mostrar();
+    if (item.ehBarato()) {
+      print("O lanche está em promoção!");
+    }
+  }
+}
